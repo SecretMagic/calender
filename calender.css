@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    overflow: hidden;
+    margin: 100px auto 0 auto;
+    width: 1000px;
+    border: 1px solid black;
+}
+.wrapper .nowTime {
+    float: left;
+    width: 400px;
+}
+.wrapper .nowTime .left {
+    width: 50px;
+    float: left;
+    cursor: pointer;
+}
+.wrapper .nowTime .left:hover {
+    color: #000;
+}
+.wrapper .nextTime {
+    float: right;
+    width: 400px;
+}
+.wrapper .nextTime .right {
+    width: 50px;
+    float: right;
+    cursor: pointer;
+}
+.wrapper .nextTime .right:hover {
+    color: #000;
+}
+.wrapper .title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    background: deepskyblue;
+    overflow: hidden;
+
+}
+.title div {
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+}
+.wrapper table {
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    color: gray;
+}
+table th {
+    border: 1px solid lightslategray;
+    height: 40px;
+}
+table td {
+    border: 1px solid grey;
+    height: 40px;
+}
+.wrapper .red {
+        color: red;
+    }
+.wrapper .blue {
+        color: blue;
+    }
