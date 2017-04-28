@@ -86,7 +86,6 @@ function turnPage(event) {
             dataDate.month = Month;
             showDate($NextTime, dataDate);
         } else {
-            console.log(Month)
             dataDate.year = Year;
             dataDate.month = Month - 1;
             showDate($NowTime, dataDate);
@@ -136,8 +135,7 @@ function showDate(dom, oDate) {
 
     //绑定点击事件
     //var dataDate = {};？自认为把dataDate定义放在showDate函数中当bindEvent函数下的turnPage函数使用时可以根据函数嵌套关系找到它，可是没有
-    //函数调用执行时的规则是什么？函数引用与其有什么区别？
-    //在没有通过明确所有者对象而直接调用的函数中，如myFunction()，将导致this的值成为默认对象（浏览器中的窗口）
+    //词法作用域，在预编译阶段生成，js没有动态作用域   this机制模拟动态作用域
     bindEvent();
     //日期
     var $Table = document.createElement("table");
